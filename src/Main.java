@@ -48,7 +48,7 @@ public class Main {
                 b = Integer.parseInt(data[1]);
             }
 
-            if (a < 1 || a >= 10 || b < 1 || b >= 10) {
+            if (a < 1 || a > 10 || b < 1 || b > 10) {
                 throw new IllegalArgumentException("Ошибка. Нужно вводить значения от 1 до 10");
             }
 
