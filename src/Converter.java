@@ -71,7 +71,7 @@ class Converter {
     }
 
     static String arabicToRoman(int number) {
-        if ((number < 0) || (number >= 3999)) {
+        if ((number <= 0) || (number > 3999)) {
             throw new IllegalArgumentException(number + " не входит в диапазон представления римских чисел от 1 до 3999");
         }
 
