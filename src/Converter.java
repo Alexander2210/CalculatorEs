@@ -64,7 +64,7 @@ class Converter {
         }
 
         if (romanNumeral.length() > 0) {
-            throw new IllegalArgumentException(input + "не может быть конвертирован");
+            throw new IllegalArgumentException(input + " не может быть конвертирован");
         }
 
         return result;
@@ -72,7 +72,7 @@ class Converter {
 
     static String arabicToRoman(int number) {
         if ((number <= 1) || (number >= 3999)) {
-            throw new IllegalArgumentException(number + "не входит в диапазон представления римских чисел от 1 до 3999");
+            throw new IllegalArgumentException(number + " не входит в диапазон представления римских чисел от 1 до 3999");
         }
 
         List <RomanNumeral> romanNumerals = RomanNumeral.getReverseSortedValues();
